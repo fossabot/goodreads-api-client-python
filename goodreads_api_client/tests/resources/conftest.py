@@ -1,7 +1,5 @@
-import os
 import unittest
 
-from vcr import VCR
 from goodreads_api_client.tests.conftest import developer_key
 from goodreads_api_client.transport import Transport
 
@@ -25,16 +23,3 @@ class ResourceTestCase(unittest.TestCase):
 
     def setUp(self):
         self._transport = Transport(developer_key=developer_key)
-
-
-def make_vcr():
-    cassette_library_dir = os.path.join(os.path.dirname(__file__),
-                                        os.pardir,
-                                        'fixtures',
-                                        'cassettes')
-    return VCR(cassette_library_dir=cassette_library_dir,
-               filter_query_parameters=['key'],
-               record_mode='new_episodes')
-
-
-vcr = make_vcr()

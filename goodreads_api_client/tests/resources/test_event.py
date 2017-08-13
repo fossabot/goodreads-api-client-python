@@ -1,6 +1,6 @@
 from goodreads_api_client.resources import Event
-from goodreads_api_client.tests.resources.conftest import ResourceTestCase, vcr
-
+from goodreads_api_client.tests.resources.conftest import ResourceTestCase
+from goodreads_api_client.tests.conftest import vcr
 
 class TestEvent(ResourceTestCase):
     def setUp(self):

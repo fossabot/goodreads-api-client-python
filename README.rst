@@ -3,6 +3,9 @@ goodreads_api_client
 
 A lightweight wrapper around the Goodreads API
 
+.. image:: https://travis-ci.org/mdzhang/goodreads-api-client-python.svg?branch=master
+    :target: https://travis-ci.org/mdzhang/goodreads-api-client-python
+
 Installation
 ------------
 

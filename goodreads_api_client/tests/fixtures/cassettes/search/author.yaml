@@ -1,0 +1,65 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.3]
+    method: GET
+    uri: https://goodreads.com/api/author_url/Murakami
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA7PJKMnNsePlsslITUyxsynJLMlJtTM2MFTwzS9LTVEISC3KTcxLzSvJqbTRh0ja
+        6IOVArUk5adUKiSlJ+fn5BfZKpVnZJakKoHEk4HqU4vsbDIMcZkElLHRhyoD2Q1UDOUFpxaVpRYh
+        S+qDrAEzoE4FAKOZndSzAAAA
+    headers:
+      Connection: [keep-alive]
+      Content-Encoding: [gzip]
+      Content-Length: ['132']
+      Content-Type: [text/html]
+      Date: ['Sun, 13 Aug 2017 17:05:17 GMT']
+      Location: ['https://www.goodreads.com/api/author_url/Murakami?key=P78YnKD8IcTJLSJM6OwWw']
+      Server: [Server]
+      Vary: ['Accept-Encoding,User-Agent']
+      X-Content-Type-Options: [nosniff]
+    status: {code: 301, message: Moved Permanently}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.3]
+    method: GET
+    uri: https://www.goodreads.com/api/author_url/Murakami
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA2WRXUvDMBSGr9dfUXvhnY0yP4qmGcPhx3QocyIyRgntYQ1dkpqPVf+9SbaxoeQm
+        OTx5znsSPPjmq3gNSjMp8uQsPU1iEKWsmFjmyfvs7iRLBiTC91JWCmilp6BbKTSQKI7xFL4saOP3
+        7kStqUEYVlLjZMQoCxj9KQbSsQ38EHw0vx0NZ8P561X2KZ5G2WM5Gz+/jSeXL91Ht1gQjDy2kXMw
+        taz2d2jLCu+Wqlgx0QR6y/hk6CBaFPV6IZxUMavypN+/OE+IK/awoBz2zgeqbMPiiVW0oZwFZyAC
+        69uQ2phWXyPUdV263L1JWkoeBpUK6Vp2yHdIN7ZiZxtYwwsOFbM8d+GPKW9vfElLq0rID2bBKLTy
+        qbdWt3crwuj/N/wCN7DPIMEBAAA=
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate']
+      Connection: [keep-alive]
+      Content-Encoding: [gzip]
+      Content-Type: [application/xml; charset=utf-8]
+      Date: ['Sun, 13 Aug 2017 17:05:17 GMT']
+      ETag: [W/"5834018f4fbdd13db61be4d87051c30a"]
+      Server: [Server]
+      Set-Cookie: ['csid=BAhJIhgxODktMjM2NjU2Mi0xNzE2MTkwBjoGRVQ%3D--a04039031c88a1a67248dd273a587ce3a6fd4a7a;
+          path=/; expires=Thu, 13 Aug 2037 17:05:17 -0000', locale=en; path=/, '_session_id2=95223e906477247d921f8b3d24652c19;
+          path=/; expires=Sun, 13 Aug 2017 23:05:17 -0000; HttpOnly']
+      Status: [200 OK]
+      Vary: ['Accept-Encoding,User-Agent']
+      X-Content-Type-Options: [nosniff, nosniff]
+      X-Frame-Options: [ALLOWALL]
+      X-Request-Id: [WVZF7XN6PPYR5W48RTCB]
+      X-Runtime: ['0.131262']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1
