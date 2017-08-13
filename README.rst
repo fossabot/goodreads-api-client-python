@@ -3,8 +3,20 @@ goodreads_api_client
 
 A lightweight wrapper around the Goodreads API
 
+.. image:: https://img.shields.io/pypi/v/goodreads-api-client.svg
+    :target: https://pypi.python.org/pypi/goodreads-api-client
+    :alt: PyPi page link -- version
+
 .. image:: https://travis-ci.org/mdzhang/goodreads-api-client-python.svg?branch=master
     :target: https://travis-ci.org/mdzhang/goodreads-api-client-python
+
+.. image:: https://img.shields.io/pypi/l/goodreads-api-client.svg
+    :target: https://pypi.python.org/pypi/goodreads-api-client
+    :alt: PyPi page link -- MIT license
+
+.. image:: https://img.shields.io/pypi/pyversions/goodreads-api-client.svg
+    :target: https://pypi.python.org/pypi/goodreads-api-client
+    :alt: PyPi page link -- Python versions
 
 .. image:: https://codeclimate.com/github/mdzhang/goodreads-api-client-python/badges/gpa.svg
     :target: https://codeclimate.com/github/codeclimate/codeclimate
