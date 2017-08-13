@@ -6,6 +6,8 @@ from goodreads_api_client.resources.base import Resource
 
 
 class Book(Resource):
+    resource_name = 'book'
+
     def id_to_work_id(self, ids: Iterable[str]):
         id_csv = ','.join(ids)
         endpoint = f'book/id_to_work_id/{id_csv}'
@@ -25,9 +27,7 @@ class Book(Resource):
         return res['books']
 
     def show(self, id_: str):
-        endpoint = f'book/show/{id_}.xml'
-        res = self._transport.req(endpoint=endpoint)
-        return res['book']
+        return self._show_single_resource(id_)
 
     def show_by_isbn(self, isbn: str):
         endpoint = f'book/isbn/{isbn}'

@@ -6,6 +6,8 @@ from goodreads_api_client.resources.base import Resource
 
 
 class Topic(Resource):
+    resource_name = 'topic'
+
     def create(self):
         raise OauthEndpointNotImplemented('topic.create')
 
@@ -15,12 +17,7 @@ class Topic(Resource):
         return res['group_folder']
 
     def show(self, id_: str):
-        endpoint = 'topic/show.xml'
-        params = {
-            'id': id_,
-        }
-        res = self._transport.req(endpoint=endpoint, params=params)
-        return res['topic']
+        return self._show_single_resource(id_)
 
     def unread_group(self):
         raise OauthEndpointNotImplemented('topic.unread_group')

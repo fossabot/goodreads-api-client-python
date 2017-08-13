@@ -5,6 +5,8 @@ from goodreads_api_client.resources.base import Resource
 
 
 class Author(Resource):
+    resource_name = 'author'
+
     def books(self, id_: str):
         """List books for an author.
 
@@ -15,6 +17,4 @@ class Author(Resource):
         return res['author']['books']
 
     def show(self, id_: str):
-        endpoint = f'author/show/{id_}'
-        res = self._transport.req(endpoint=endpoint)
-        return res['author']
+        return self._show_single_resource(id_)

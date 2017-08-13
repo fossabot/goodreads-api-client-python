@@ -4,6 +4,13 @@
 
 class Resource(object):
     """Base resource class. All Goodreads API resource classes should inherit this."""
+    resource_name = 'resource'
 
     def __init__(self, transport=None):
         self._transport = transport
+
+    def _show_single_resource(self, id_: str):
+        name = self.__class__.resource_name
+        endpoint = f'{name}/show/{id_}'
+        res = self._transport.req(endpoint=endpoint)
+        return res[name]

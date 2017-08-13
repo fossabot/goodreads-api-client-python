@@ -6,6 +6,8 @@ from goodreads_api_client.resources.base import Resource
 
 
 class User(Resource):
+    resource_name = 'user'
+
     def compare(self):
         raise OauthEndpointNotImplemented('user.compare')
 
@@ -19,6 +21,4 @@ class User(Resource):
         raise OauthEndpointNotImplemented('user.friends')
 
     def show(self, id_: str):
-        endpoint = f'user/show/{id_}.xml'
-        res = self._transport.req(endpoint=endpoint)
-        return res['user']
+        return self._show_single_resource(id_)

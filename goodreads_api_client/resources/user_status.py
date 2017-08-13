@@ -6,6 +6,8 @@ from goodreads_api_client.resources.base import Resource
 
 
 class UserStatus(Resource):
+    resource_name = 'user_status'
+
     def create(self):
         raise OauthEndpointNotImplemented('user_status.create')
 
@@ -16,6 +18,4 @@ class UserStatus(Resource):
         raise OauthEndpointNotImplemented('user_status.index')
 
     def show(self, id_: str):
-        endpoint = f'user_status/show/{id_}'
-        res = self._transport.req(endpoint=endpoint)
-        return res['user_status']
+        return self._show_single_resource(id_)
