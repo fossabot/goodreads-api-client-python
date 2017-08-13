@@ -26,7 +26,13 @@ install_requires = [
     'xmltodict==0.11.0',
 ]
 
+publish_requires = [
+    'twine==1.9.1',
+    'wheel==0.29.0',
+]
+
 extras_require = {
+    'publish': publish_requires,
     'test': tests_require,
 }
 
