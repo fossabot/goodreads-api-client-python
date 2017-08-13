@@ -1,0 +1,78 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.3]
+    method: GET
+    uri: https://goodreads.com/group/search?page=1&q=adventure
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA7PJKMnNsePlsslITUyxsynJLMlJtTM2MFTwzS9LTVEISC3KTcxLzSvJqbTRh0ja
+        6IOVArUk5adUKiSlJ+fn5BfZKpVnZJakKoHEk4HqU4vsbDIMcZkElLHRhyoD2Q1UDOUFpxaVpRYh
+        S+qDrAEzoE4FAKOZndSzAAAA
+    headers:
+      Connection: [keep-alive]
+      Content-Encoding: [gzip]
+      Content-Length: ['132']
+      Content-Type: [text/html]
+      Date: ['Sun, 13 Aug 2017 16:02:37 GMT']
+      Location: ['https://www.goodreads.com/group/search?key=P78YnKD8IcTJLSJM6OwWw&page=1&q=adventure']
+      Server: [Server]
+      Vary: ['Accept-Encoding,User-Agent']
+      X-Content-Type-Options: [nosniff]
+    status: {code: 301, message: Moved Permanently}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.3]
+    method: GET
+    uri: https://www.goodreads.com/group/search?page=1&q=adventure
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA7WYW3PaOBTH3/MptOxM34h1tWyX0mGSTafdTS+ETqbT6TDCVsBbY3stOQnffo8N
+        xYFOSQebJ2wj6a+jn85FGrx+XCboXhcmztJXPXKOe0inYRbF6fxV7/Pkqu/1Xg/PBm+yLCq0isxY
+        mzxLjR6eITQY6/9KbWz1DG+qtAud2jhUFgYb2qLUA2fvY90S2n7Xq+Hgj68Xl6PJ6OtH6X1J/770
+        3oaTd//cvLt2PzzcPnz7Nhw4VbP14EttF1nU9JkXWZlPjVZFuKibbhpU03J251U3NZtxkthYZKwq
+        LFhb2RrBLxhtM6sSeBSY99ZN63nWfZ+8x9HQ467kAweeNsZUpoehNmaYl7MkDsHo9Wvzf2lghadh
+        VqZ26BEO3Z9+adrZ2CZ6eL0yVhexNuiFWuYv0UURLzWaLIo4SWCcgbNu1nQzS5Uk03ip5npaFkmz
+        SgtrcxM4Tv2XOZ8XfWWMtuY8zJbOel0cwlzpMeZLnlOnNu7833xer+n+uI1iey22p9WM2Kgkytip
+        Cm18H9vVVNnGsJsyRaNyjghD2A8wCRhGfSwxRhQTWU/+p86bcQdrww9DJlhIz21BmTP6DOWtS6Gx
+        vo/1A5B9ofLMvERvqk3XOWWfMyx8jIHy2rpTYt6KsX2xlpyp7Jaz63KJW3Cmh135ywjNsuw7UmmE
+        otiEpakCLbpIytkRgPc9eO3MTprli8xm633tCPzoun0CjkxnbihmvlTcY64iTN9FM/j1hRfRdvB/
+        ayKEkEfCvb6rtWK+Yi5xfUki5rOZUl50pxQO74jW26kcvzW8QMiAs063BgQS7v9iZxTxvbJVdjsU
+        6CkVPju8Pa6dazTOlioNYbBuozqFQC6ERxn4e21KO+IHM0ijxfa0WiFlAevW26kP8e8XSH8ndRNM
+        BTlM9OP7sfP5Co2iKA7tjwT+Xj/MIJ13jZh52MWeELJCXJl2QsSNFiDe0WqFmASi28RNGRcSgvLR
+        5RkT4jDhPycLPYZSGCrkT1X12zVVgYnnM0z8imptzQmxNmKAdVesFVcccNppNPZd2QIqIUI+E4pH
+        eRaqZJUbjW7hGKPhTNQ1WU6l73mMECAL9pwQa6PEdpTaMCV+QESnTAkllLfByqkLNfqho9RlkeXo
+        L2C5sgtwWDSCOqxy3s7RMkkYZm51hlqbdUq6WzGorus17KSEIiygvFvAUkqvTTAmDCqwQ3xvixiO
+        ygZJAXm92wKKc79KekRUSGtDTol0KwZId8WO91kZCD9gHfssrDSUQMenVyyecdmbXIUafch1odCV
+        Sg3c53QLlnJMCHa5V4MFc07ItdGquD7VaoWVB9Q9wlPhUgSuv+A6b3P3MzyDx5+v9v4HEvO6AhUU
+        AAA=
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate']
+      Connection: [keep-alive]
+      Content-Encoding: [gzip]
+      Content-Type: [application/xml; charset=utf-8]
+      Date: ['Sun, 13 Aug 2017 16:02:37 GMT']
+      ETag: [W/"95522290341e109a5f7b3036f81c18d5"]
+      Server: [Server]
+      Set-Cookie: ['csid=BAhJIhg1NjEtNDE0NTMyMS01MTUxMzUwBjoGRVQ%3D--7296fa3a2f03dd50de40cabff2a91afaa4e34852;
+          path=/; expires=Thu, 13 Aug 2037 16:02:37 -0000', locale=en; path=/, '_session_id2=b3564b5d2859df64a86d5388fc808f50;
+          path=/; expires=Sun, 13 Aug 2017 22:02:37 -0000; HttpOnly']
+      Status: [200 OK]
+      Vary: ['Accept-Encoding,User-Agent']
+      X-Content-Type-Options: [nosniff, nosniff]
+      X-Frame-Options: [ALLOWALL]
+      X-Request-Id: [VZTS93PTFZJWZ2XXGZQ5]
+      X-Runtime: ['0.050828']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1
