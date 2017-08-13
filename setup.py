@@ -30,6 +30,9 @@ extras_require = {
     'test': tests_require,
 }
 
+with open('README.rst', 'r') as f:
+    readme = f.read()
+
 setup(
     name='goodreads_api_client',
     version=version,
@@ -37,7 +40,7 @@ setup(
     author='Michelle D. Zhang',
     author_email='zhang.michelle.d@gmail.com',
     description='A non-official client for Goodreads (https://goodreads.com)',
-    long_description=__doc__,
+    long_description=readme,
     license='MIT',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
