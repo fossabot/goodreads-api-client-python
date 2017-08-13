@@ -1,0 +1,64 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.3]
+    method: GET
+    uri: https://goodreads.com/book/id_to_work_id/1842,1867
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA7PJKMnNsePlsslITUyxsynJLMlJtTM2MFTwzS9LTVEISC3KTcxLzSvJqbTRh0ja
+        6IOVArUk5adUKiSlJ+fn5BfZKpVnZJakKoHEk4HqU4vsbDIMcZkElLHRhyoD2Q1UDOUFpxaVpRYh
+        S+qDrAEzoE4FAKOZndSzAAAA
+    headers:
+      Connection: [keep-alive]
+      Content-Encoding: [gzip]
+      Content-Length: ['132']
+      Content-Type: [text/html]
+      Date: ['Sun, 13 Aug 2017 01:44:38 GMT']
+      Location: ['https://www.goodreads.com/book/id_to_work_id/1842,1867?key=P78YnKD8IcTJLSJM6OwWw']
+      Server: [Server]
+      Vary: ['Accept-Encoding,User-Agent']
+      X-Content-Type-Options: [nosniff]
+    status: {code: 301, message: Moved Permanently}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.3]
+    method: GET
+    uri: https://www.goodreads.com/book/id_to_work_id/1842,1867
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA2WQUWvCQBCE3/MrYt7tqSXtFdYTUSq1LYqNSBEJMbfoobltc5em/ffmomLRt9nl
+        m9lhofeb7f0fzI0i3Q3ad63AR52SVHrTDebRc5MHPeHBiEjmmEgzQ/NF2qDwfB9m+F2gsU5XU1LY
+        LWqr0sRWYcLmBQK7WtZkxe7wT0BjORj2o/5y+sg/9euQv6TR+O1j/P4wKRflaiWAOewYnqHdkrx4
+        1kS7WMnYUlxS7mRtOGGuHPvXDhzTVNKc0pTFTHTa95yHHWD1dDxTy/CJh+ctsIvVA3b7hwNO32Cn
+        QgEAAA==
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate']
+      Connection: [keep-alive]
+      Content-Encoding: [gzip]
+      Content-Type: [application/xml; charset=utf-8]
+      Date: ['Sun, 13 Aug 2017 01:44:38 GMT']
+      ETag: [W/"b483c9c3cc3d7eb7a3f39663f4963a83"]
+      Server: [Server]
+      Set-Cookie: ['csid=BAhJIhg4ODEtNDQxMDQzMi01NDE3Nzc5BjoGRVQ%3D--e369128939514eb19e4a08250ff02ddabbd9e6a8;
+          path=/; expires=Thu, 13 Aug 2037 01:44:38 -0000', locale=en; path=/, '_session_id2=c38e6b2eab5de1b511dd821e57820667;
+          path=/; expires=Sun, 13 Aug 2017 07:44:38 -0000; HttpOnly']
+      Status: [200 OK]
+      Vary: ['Accept-Encoding,User-Agent']
+      X-Content-Type-Options: [nosniff, nosniff]
+      X-Frame-Options: [ALLOWALL]
+      X-Request-Id: [GJRNGZW5Y0YM5Y6QHVTM]
+      X-Runtime: ['0.055748']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1

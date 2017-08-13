@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 """Module containing transport that underlies all requests made to the Goodreads API"""
 
+from collections import OrderedDict
+import json
+
 import requests
 import xmltodict
 
@@ -41,10 +44,17 @@ class Transport(object):
         return res
 
     @staticmethod
-    def _transform_res(res):
-        content = xmltodict.parse(res.text)
-        return content['GoodreadsResponse']
+    def _transform_res(res, transform: str='xml'):
+        if transform == 'xml':
+            content = xmltodict.parse(res.text)
+            return content['GoodreadsResponse']
+        if transform == 'json':
+            content = json.loads(res.text)
+            # This is just for consistency of return values across
+            # different methods in this class - the ordering is not meaningful
+            return OrderedDict(content.items())
+        return res.text
 
-    def req(self, method: str='GET', endpoint: str=None, params: dict=None, data: dict=None):
+    def req(self, method: str='GET', endpoint: str=None, params: dict=None, data: dict=None, transform: str='xml'):
         res = self._req(method, endpoint, params, data)
-        return Transport._transform_res(res)
+        return Transport._transform_res(res, transform)
