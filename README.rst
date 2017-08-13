@@ -6,6 +6,10 @@ A lightweight wrapper around the Goodreads API
 .. image:: https://travis-ci.org/mdzhang/goodreads-api-client-python.svg?branch=master
     :target: https://travis-ci.org/mdzhang/goodreads-api-client-python
 
+.. image:: https://codeclimate.com/github/mdzhang/goodreads-api-client-python/badges/gpa.svg
+    :target: https://codeclimate.com/github/codeclimate/codeclimate
+    :alt: Code Climate
+
 Installation
 ------------
 
