@@ -3,7 +3,7 @@
 API Documentation
 =================
 
-.. module:: goodreads_api_client
+.. automodule:: goodreads_api_client
 
 This part of the documentation covers the interfaces of goodreads_api_client. 
 
@@ -13,7 +13,7 @@ Main Interface
 You'll primarily use goodreads_api_client via the :class:`Client <Client>` it provides.
 
 .. autoclass:: Client
-   :inherited-members:
+    :members:
 
 All other endpoints are provided through resource attributes on the :class:`Client <Client>`
 
@@ -22,42 +22,59 @@ All other endpoints are provided through resource attributes on the :class:`Clie
 Resources
 ---------
 
-.. autoclass:: goodreads_api_client.resources.Author
-    :inherited-members:
-.. autoclass:: goodreads_api_client.resources.Book
-    :inherited-members:
-.. autoclass:: goodreads_api_client.resources.Comment
-    :inherited-members:
-.. autoclass:: goodreads_api_client.resources.Event
-    :inherited-members:
-.. autoclass:: goodreads_api_client.resources.Group
-    :inherited-members:
-.. autoclass:: goodreads_api_client.resources.ReadStatus
-    :inherited-members:
-.. autoclass:: goodreads_api_client.resources.Recommendation
-    :inherited-members:
-.. autoclass:: goodreads_api_client.resources.Review
-    :inherited-members:
-.. autoclass:: goodreads_api_client.resources.Series
-    :inherited-members:
-.. autoclass:: goodreads_api_client.resources.Shelf
-    :inherited-members:
-.. autoclass:: goodreads_api_client.resources.Topic
-    :inherited-members:
-.. autoclass:: goodreads_api_client.resources.User
-    :inherited-members:
-.. autoclass:: goodreads_api_client.resources.UserStatus
-    :inherited-members:
+.. autoclass:: goodreads_api_client.resources.author.Author
+    :members:
+    :show-inheritance:
+.. autoclass:: goodreads_api_client.resources.book.Book
+    :members:
+    :show-inheritance:
+.. autoclass:: goodreads_api_client.resources.comment.Comment
+    :members:
+    :show-inheritance:
+.. autoclass:: goodreads_api_client.resources.event.Event
+    :members:
+    :show-inheritance:
+.. autoclass:: goodreads_api_client.resources.group.Group
+    :members:
+    :show-inheritance:
+.. autoclass:: goodreads_api_client.resources.read_status.ReadStatus
+    :members:
+    :show-inheritance:
+.. autoclass:: goodreads_api_client.resources.recommendation.Recommendation
+    :members:
+    :show-inheritance:
+.. autoclass:: goodreads_api_client.resources.review.Review
+    :members:
+    :show-inheritance:
+.. autoclass:: goodreads_api_client.resources.series.Series
+    :members:
+    :show-inheritance:
+.. autoclass:: goodreads_api_client.resources.shelf.Shelf
+    :members:
+    :show-inheritance:
+.. autoclass:: goodreads_api_client.resources.topic.Topic
+    :members:
+    :show-inheritance:
+.. autoclass:: goodreads_api_client.resources.user.User
+    :members:
+    :show-inheritance:
+.. autoclass:: goodreads_api_client.resources.user_status.UserStatus
+    :members:
+    :show-inheritance:
 
 Lower-Level Classes
 -------------------
 
 .. autoclass:: goodreads_api_client.transport.Transport
-   :inherited-members:
+    :members:
+    :show-inheritance:
 
 Exceptions
 ----------
 
 .. autoexception:: goodreads_api_client.exceptions.GoodreadsApiClientException
+    :show-inheritance:
 .. autoexception:: goodreads_api_client.exceptions.OauthEndpointNotImplemented
+    :show-inheritance:
 .. autoexception:: goodreads_api_client.exceptions.ExtraApiPermissionsRequired
+    :show-inheritance:
