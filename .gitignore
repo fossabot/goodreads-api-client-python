@@ -1,2 +1,5 @@
+.eggs/
+.envrc
 .python-version
+
 *.egg-info

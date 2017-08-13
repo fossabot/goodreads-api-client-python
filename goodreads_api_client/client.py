@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Module containing client with methods of Goodreads API."""
+"""Module containing client with resources of Goodreads API."""
 
 from goodreads_api_client.resources import *
+from goodreads_api_client.transport import Transport
 
 
 class Client(object):
@@ -15,18 +16,7 @@ class Client(object):
         :param str/None base_url: The base URL to use to contact the Goodreads API.
             Defaults to https://goodreads.com.
         """
-        if base_url is None:
-            self.base_url = 'https://goodreads.com'
-        else:
-            self.base_url = base_url
+        self._transport = Transport(developer_key, base_url)
 
-        self.developer_key = developer_key
-
-        self.Book = Book(transport=self._req)
-
-    def _req(self, method, endpoint, params=None, data=None):
-        pass
-
-    def book_show(self, id_: str):
-        return self.Book.show(id_)
-
+        # Add resources
+        self.Book = Book(transport=self._transport)

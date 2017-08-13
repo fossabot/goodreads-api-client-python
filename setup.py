@@ -18,11 +18,12 @@ with open('goodreads_api_client/__init__.py', 'rb') as f:
 
 
 tests_require = [
-
+    'vcrpy==1.11.1',
 ]
 
 install_requires = [
-
+    'requests==2.18.3',
+    'xmltodict==0.11.0',
 ]
 
 setup(
