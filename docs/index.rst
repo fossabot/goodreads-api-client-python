@@ -1,3 +1,8 @@
+.. goodreads_api_client documentation master file, created by
+   sphinx-quickstart on Sun Aug 13 14:39:48 2017.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
 goodreads_api_client
 ====================
 
@@ -22,49 +27,32 @@ A lightweight wrapper around the Goodreads API
     :target: https://codeclimate.com/github/codeclimate/codeclimate
     :alt: Code Climate
 
-Installation
-------------
+Quickstart Guide
+----------------
 
-.. code-block:: bash
+Step-by-step instructions for getting started with goodreads_api_client.
 
-    $ pip install goodreads_api_client
+.. toctree::
+   :maxdepth: 2
 
-Usage
------
+   quickstart
 
-.. code-block:: python
+API Documentation
+-----------------
 
-    >>> import goodreads_api_client as gr
-    >>> client = gr.Client(developer_key='<YOUR_DEVELOPER_KEY>')
-    >>> book = client.Book.show('1128434')
-    >>> keys_wanted = ['id', 'title', 'isbn']
-    >>> reduced_book = {k:v for k, v in book.items() if k in keys_wanted}
-    >>> reduced_book
-    {'id': '1128434', 'title': 'The Last Wish (The Witcher, #1)', 'isbn': '0575077832'}
+Documentation on specific functions, classes, and methods.
 
-Resources
----------
+.. toctree::
+   :maxdepth: 2
 
-* `Goodreads API Docs`_
+   api
 
-.. _Goodreads API Docs: https://www.goodreads.com/api/index
+Contributor Guide
+-----------------
 
-Rationale
----------
+Guide to contributing to goodreads_api_client.
 
-There are a number of Goodreads API wrapper libraries out there, but most are either abandoned or the code is some combination of odd, undocumented, untested, or incomplete in its API coverage.
+.. toctree::
+   :maxdepth: 3
 
-Contributing
-------------
-
-To install locally
-
-.. code-block:: bash
-
-    $ make install
-
-And to test
-
-.. code-block:: bash
-
-    $ make test
+   contributing
