@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Module containing user resource class."""
+"""Module containing shelf resource class."""
 
 from goodreads_api_client.resources.base import Resource
 
