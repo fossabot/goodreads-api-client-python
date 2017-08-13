@@ -30,6 +30,13 @@ Usage
     >>> reduced_book
     {'id': '1128434', 'title': 'The Last Wish (The Witcher, #1)', 'isbn': '0575077832'}
 
+Resources
+---------
+
+* `Goodreads API Docs`_
+
+.. _Goodreads API Docs: https://www.goodreads.com/api/index
+
 Rationale
 ---------
 
