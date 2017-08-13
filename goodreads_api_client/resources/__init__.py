@@ -10,6 +10,7 @@ the Goodreads API
 from goodreads_api_client.resources.author import Author
 from goodreads_api_client.resources.book import Book
 from goodreads_api_client.resources.comment import Comment
+from goodreads_api_client.resources.event import Event
 from goodreads_api_client.resources.read_status import ReadStatus
 from goodreads_api_client.resources.recommendation import Recommendation
 from goodreads_api_client.resources.review import Review
