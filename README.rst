@@ -22,6 +22,10 @@ A lightweight wrapper around the Goodreads API
     :target: https://codeclimate.com/github/codeclimate/codeclimate
     :alt: Code Climate
 
+.. image:: https://readthedocs.org/projects/goodreads-api-client/badge/?version=latest
+    :target: http://goodreads-api-client.readthedocs.io/en/latest/
+    :alt: RTD Docs
+
 Installation
 ------------
 
