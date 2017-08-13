@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 """Module containing topic resource class."""
 
+from goodreads_api_client.exceptions import OauthEndpointNotImplemented
 from goodreads_api_client.resources.base import Resource
 
 
 class Topic(Resource):
     def create(self):
-        raise NotImplementedError('OAuth not yet supported by this library')
+        raise OauthEndpointNotImplemented('topic.create')
 
     def group_folder(self, id_: str):
         endpoint = f'topic/group_folder/{id_}'
@@ -22,4 +23,4 @@ class Topic(Resource):
         return res['topic']
 
     def unread_group(self):
-        raise NotImplementedError('OAuth not yet supported by this library')
+        raise OauthEndpointNotImplemented('topic.unread_group')
