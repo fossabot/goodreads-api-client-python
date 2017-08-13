@@ -22,8 +22,6 @@ Basic Usage
 
 Make sure you have a Goodreads developer key first
 
-Import goodreads_api_client
-
 Begin by importing the Requests module:
 
     >>> import goodreads_api_client as gr

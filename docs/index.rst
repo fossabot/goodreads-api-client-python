@@ -33,7 +33,7 @@ Quickstart Guide
 Step-by-step instructions for getting started with goodreads_api_client.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
    quickstart
 
@@ -43,7 +43,7 @@ API Documentation
 Documentation on specific functions, classes, and methods.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
    api
 
@@ -53,6 +53,6 @@ Contributor Guide
 Guide to contributing to goodreads_api_client.
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
 
    contributing

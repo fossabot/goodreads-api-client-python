@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 goodreads_api_client.exceptions
-~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Contains goodreads_api_client's exceptions.
 """

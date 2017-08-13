@@ -9,6 +9,9 @@ docs:
 install:
 	python setup.py develop && pip install .[test]
 
+install-docs:
+	pip install -r docs/requirements.txt
+
 install-publish:
 	pip install .[publish]
 
