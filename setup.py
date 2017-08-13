@@ -17,6 +17,7 @@ with open('goodreads_api_client/__init__.py', 'rb') as f:
         f.read().decode('utf-8')).group(1)))
 
 tests_require = [
+    'pycodestyle==2.3.1',
     'vcrpy==1.11.1',
 ]
 
