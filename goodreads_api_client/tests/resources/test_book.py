@@ -14,21 +14,12 @@ class TestBook(ResourceTestCase):
 
     @vcr.use_cassette('book/review_counts.yaml')
     def test_review_counts(self):
-        result = self._book.review_counts(['0441172717', '0141439602'])
+        result = self._book.review_counts(['0441172717'])
 
-        self.assertEqual(len(result), 2)
-        self.assertEqual(result[0], {
-            'id': 53732,
-            'isbn': '0441172717',
-            'isbn13': '9780441172719',
-            'ratings_count': 8529,
-            'reviews_count': 14303,
-            'text_reviews_count': 747,
-            'work_ratings_count': 525005,
-            'work_reviews_count': 800918,
-            'work_text_reviews_count': 13207,
-            'average_rating': '4.19',
-        })
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0]['id'], 53732)
+        self.assertEqual(result[0]['isbn'], '0441172717')
+        self.assertEqual(result[0]['isbn13'], '9780441172719')
 
     @vcr.use_cassette('book/show.yaml')
     def test_show(self):

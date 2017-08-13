@@ -1,23 +1,20 @@
 # -*- coding: utf-8 -*-
-"""Module containing user resource class."""
+"""Module containing user status resource class."""
 
 from goodreads_api_client.resources.base import Resource
 
 
-class User(Resource):
-    def compare(self):
+class UserStatus(Resource):
+    def create(self):
         raise NotImplementedError('OAuth not yet supported by this library')
 
-    def followers(self):
+    def destroy(self):
         raise NotImplementedError('OAuth not yet supported by this library')
 
-    def following(self):
-        raise NotImplementedError('OAuth not yet supported by this library')
-
-    def friends(self):
+    def index(self):
         raise NotImplementedError('OAuth not yet supported by this library')
 
     def show(self, id_: str):
-        endpoint = f'user/show/{id_}.xml'
+        endpoint = f'user_status/show/{id_}'
         res = self._transport.req(endpoint=endpoint)
-        return res['user']
+        return res['user_status']

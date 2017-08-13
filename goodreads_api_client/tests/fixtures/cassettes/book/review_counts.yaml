@@ -7,7 +7,7 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.18.3]
     method: GET
-    uri: https://goodreads.com/book/review_counts.json?isbns=0441172717%2C0141439602
+    uri: https://goodreads.com/book/review_counts.json?isbns=0441172717
   response:
     body:
       string: !!binary |
@@ -19,8 +19,8 @@ interactions:
       Content-Encoding: [gzip]
       Content-Length: ['132']
       Content-Type: [text/html]
-      Date: ['Sun, 13 Aug 2017 01:42:00 GMT']
-      Location: ['https://www.goodreads.com/book/review_counts.json?key=P78YnKD8IcTJLSJM6OwWw&isbns=0441172717%2C0141439602']
+      Date: ['Sun, 13 Aug 2017 13:54:53 GMT']
+      Location: ['https://www.goodreads.com/book/review_counts.json?key=P78YnKD8IcTJLSJM6OwWw&isbns=0441172717']
       Server: [Server]
       Vary: ['Accept-Encoding,User-Agent']
       X-Content-Type-Options: [nosniff]
@@ -33,32 +33,31 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.18.3]
     method: GET
-    uri: https://www.goodreads.com/book/review_counts.json?isbns=0441172717%2C0141439602
+    uri: https://www.goodreads.com/book/review_counts.json?isbns=0441172717
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA32P3QrCMAxG3yXXQ5KmbZq9isjYtMgQNtjmD8je3YJTcRZvv0MOOXdo+v40Qrm9
-        Q3uA0rGwKaAdmw5KQGuJxAgJPDfitKqEN9AEhnpqu+NY7ftzN0EZnNE0xksbr++RLCMXMMXbVK2Q
-        WCng2g+naiVyxiG6F/s+CohKYWE5K7HB5K0vcaiPcVGn5+0m/TwXz1pSx59YsulL9WjWsS+Av7Ge
-        vbhMLloVxnwwJSHnk7149SGfTOQ0KP1tRgmZZt4Egnk3PwBOAdy47QEAAA==
+        H4sIAAAAAAAAA22O2wqDMBAF/2WfQ8nm0k3yK0WCtkGCYCCmWhD/vYFaodLXGc5wVuhSGiZwtxXi
+        A5yWJAWDOHUjOOBKIZIgJPgwlJVaMoewVeS2xLGf/D09xwLOaIkVhjmG5YCoJFcMSngVf1KkiMGS
+        8uBPIS00v5qv+x0ZjlzY3f2rohTIGbRzyG0f9nQ9ry7189ZsbwvWnuz5AAAA
     headers:
       Cache-Control: ['max-age=0, private, must-revalidate']
       Connection: [keep-alive]
       Content-Encoding: [gzip]
-      Content-Length: ['214']
+      Content-Length: ['159']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Sun, 13 Aug 2017 01:42:01 GMT']
-      ETag: [W/"699ac217b04f839d32e50fb3f8a67a0b-gzip"]
+      Date: ['Sun, 13 Aug 2017 13:54:53 GMT']
+      ETag: [W/"9ee5b548099f907726da8d1d80bd3f90-gzip"]
       Server: [Server]
-      Set-Cookie: ['csid=BAhJIhg5MjEtNDU4MDkzNC05OTA0NTI3BjoGRVQ%3D--6d05f14bc7416b2bcd1c0d2a45d8d224e71e7460;
-          path=/; expires=Thu, 13 Aug 2037 01:42:01 -0000', locale=en; path=/, '_session_id2=eb9c9f228f28bd1c48a44c8402f20f9e;
-          path=/; expires=Sun, 13 Aug 2017 07:42:01 -0000; HttpOnly']
+      Set-Cookie: ['csid=BAhJIhg4MjQtMzU5NzQ3OC0zMDgwNDIzBjoGRVQ%3D--c5039e534a18f85199a3d2b37c30f073b91a8ec7;
+          path=/; expires=Thu, 13 Aug 2037 13:54:53 -0000', locale=en; path=/, '_session_id2=60e646890ae8538539a451390ad993a3;
+          path=/; expires=Sun, 13 Aug 2017 19:54:53 -0000; HttpOnly']
       Status: [200 OK]
       Vary: ['Accept-Encoding,User-Agent']
       X-Content-Type-Options: [nosniff, nosniff]
       X-Frame-Options: [ALLOWALL]
-      X-Request-Id: [4Z1J2504XKMMEN6R17RW]
-      X-Runtime: ['0.054153']
+      X-Request-Id: [0C7DGQ3D0VKQ2273CNYD]
+      X-Runtime: ['0.040545']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
 version: 1

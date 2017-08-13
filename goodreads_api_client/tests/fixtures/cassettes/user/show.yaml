@@ -19,7 +19,7 @@ interactions:
       Content-Encoding: [gzip]
       Content-Length: ['132']
       Content-Type: [text/html]
-      Date: ['Sun, 13 Aug 2017 13:40:18 GMT']
+      Date: ['Sun, 13 Aug 2017 13:53:23 GMT']
       Location: ['https://www.goodreads.com/user/show/13686342.xml?key=P78YnKD8IcTJLSJM6OwWw']
       Server: [Server]
       Vary: ['Accept-Encoding,User-Agent']
@@ -49,18 +49,18 @@ interactions:
       Connection: [keep-alive]
       Content-Encoding: [gzip]
       Content-Type: [application/xml; charset=utf-8]
-      Date: ['Sun, 13 Aug 2017 13:40:18 GMT']
+      Date: ['Sun, 13 Aug 2017 13:53:23 GMT']
       ETag: [W/"d4d48ea091dd13a6a8e766afe02587d9"]
       Server: [Server]
-      Set-Cookie: ['csid=BAhJIhgzNzgtMTg3Mzk1NC05NjMwMTk3BjoGRVQ%3D--62a65b50c2025216f6bf25005a6606dde6b0c2eb;
-          path=/; expires=Thu, 13 Aug 2037 13:40:18 -0000', locale=en; path=/, '_session_id2=1f9af6591c7df3d18591439cd939f86c;
-          path=/; expires=Sun, 13 Aug 2017 19:40:18 -0000; HttpOnly']
+      Set-Cookie: ['csid=BAhJIhg2MzktMjIyNzgyMi0yNjA0MTMzBjoGRVQ%3D--fc92eda1a7eb461798fb43be3ceb2850ab4d908a;
+          path=/; expires=Thu, 13 Aug 2037 13:53:23 -0000', locale=en; path=/, '_session_id2=82433e350912d2ff2f281cf329372adc;
+          path=/; expires=Sun, 13 Aug 2017 19:53:23 -0000; HttpOnly']
       Status: [200 OK]
       Vary: ['User-Agent,Accept-Encoding']
       X-Content-Type-Options: [nosniff, nosniff]
       X-Frame-Options: [ALLOWALL]
-      X-Request-Id: [GGFSTX4Z95H9MKR3CNXD]
-      X-Runtime: ['0.137884']
+      X-Request-Id: [0HQN2T635RJC1PG4QSJ0]
+      X-Runtime: ['0.085465']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
 version: 1
