@@ -26,6 +26,10 @@ install_requires = [
     'xmltodict==0.11.0',
 ]
 
+extras_require = {
+    'test': tests_require,
+}
+
 setup(
     name='goodreads_api_client',
     version=version,
@@ -41,6 +45,7 @@ setup(
         'Topic :: Software Development',
     ],
     packages=['goodreads_api_client'],
+    extras_require=extras_require,
     tests_require=tests_require,
     install_requires=install_requires,
     test_suite='goodreads_api_client.tests',
