@@ -1,0 +1,209 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.3]
+    method: GET
+    uri: https://goodreads.com/comment/title.xml?id=792532185&type=review
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA7PJKMnNsePlsslITUyxsynJLMlJtTM2MFTwzS9LTVEISC3KTcxLzSvJqbTRh0ja
+        6IOVArUk5adUKiSlJ+fn5BfZKpVnZJakKoHEk4HqU4vsbDIMcZkElLHRhyoD2Q1UDOUFpxaVpRYh
+        S+qDrAEzoE4FAKOZndSzAAAA
+    headers:
+      Connection: [keep-alive]
+      Content-Encoding: [gzip]
+      Content-Length: ['132']
+      Content-Type: [text/html]
+      Date: ['Sun, 13 Aug 2017 15:09:59 GMT']
+      Location: ['https://www.goodreads.com/comment/title.xml?key=P78YnKD8IcTJLSJM6OwWw&id=792532185&type=review']
+      Server: [Server]
+      Vary: ['Accept-Encoding,User-Agent']
+      X-Content-Type-Options: [nosniff]
+    status: {code: 301, message: Moved Permanently}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.3]
+    method: GET
+    uri: https://www.goodreads.com/comment/title.xml?id=792532185&type=review
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6RWaY8ctxH9LP0Kaj5kVoh2xgIEQ5FmN7Bs+QAcRUA2HwJBWLB5s3lfTTLOfw97
+        ZvaID8CIGw00u3jUe1Wvqvvw7Ju/f33zr4/vAU9aXT893D0IxNdPATgkkRS5/s5aHIYpgkvwETIC
+        PtgEvrXZ4MP+tOLpk4MSZgY8EHq12cMYSYp7drdvh2LcAE2wgFebiAIhZgMCUVebf6SmSOSEpA1I
+        zZGrTSI17Y/r99e/fqyGwvzfJ4JxHZ5dXn4SFKgEfngPXn9eqQ7rrzBAVmtrboUerOOtIH/Q7Sdi
+        sKCfLy/PHs84WCJnICuy34nmD0K5vDw8ewTnFIGRGuHS40RIWODJurl+ely0XgUGcMugB1enx08/
+        gU+f395Pr1M7lyO/+LS9HUr4CqEhlrR9Abb//OryL1++/vLl68uX28/Pf2NLChDNq9CKIMu6a//q
+        i1e3xia6au64797XBc0GJWHNxXPw73vrHUgGB0RsUdbEpN0QHkzkvSLr28X2xGv7/C1gcLeKb6zd
+        HuX3wHp7nISxGTRmU8jkAfPqZEzGsE5dbHlKLr7ZgqtHHpVFcAW3c8Emi6wCfwXnhfv9Frw5vbwZ
+        4+fgz2AbE0xxx3bY5kkRpASad4akPUY7Gbf/63nNQXzMjpF0phbftRvIPkBNHkh++uLzWxB3DobB
+        /YPFZCdMJCG9I9QGcsHgCxAf5eM/zy/uonzYnwI12sOeHxvDYbK4AYGvNtxqMoQxigeLcrREkci6
+        ioSj/TyD1GgJV5u1cr+2Jg0Iq5yePHm0UVlmh3G1DSu8ayWb64PQDIwgP/QVBZvN6aG93K57d0zQ
+        DVgETvxq8/LVFxsw2TBgXG3GEKp0tblvR2trOezhydlhP6Cvw7vB+bmSGtUI3r3/7ocPb8Aj6OBU
+        o0fKvyS28hs0fwf/lehvxudbZeE5SAPaI1eK0HTv49hTs74Zoj0F9BhS/vL65216mAbF4+wU1sa6
+        XjecALf28xHO0Y59JjERPOqFRLNNgFQR0+609KMiMBKAOEEzSGNfDgpANoi+ADaAIkbej/ZVEcdD
+        zxuP7k4+TyeN1J6DBo91++P4bmwesv0nBX22o+osSOMeJ96n7Xj2evQ5dw8pezT6WRbPSXz/4Ztf
+        pnDoeRXyUdfHz9/TY8JvuIhg3BAEaLDVl4oYljj4/uZvP4L1gzDU+wbQWY2WIVGh3bYZcxK48a2k
+        jvF4165rNcs6VD85k6q0dIEJZU4SK1bRIpakQvZK4oa9DE1J5hmdBZESqywnbKZuUmBJxblSM7Pa
+        XHN0dr5qrNOSJcSN8o6c1GkqQfTSFsly1JJFz0ugUqiCatXOTBJXzpXDyjojudSMOTSFYhCxOIaO
+        UO+qckc4CrV5ZZWB3BYeKUZCEBZqsHJGTTi/+DqSRpjADhqXbCN0ka3nyaAgecseKxeUnSaPqq0y
+        0c7oVNu0WDQcJBwpz5JpHUxzmneaJ8KXsRsuLXZhfJE0IKddDVG3WD0sCFbeSCREOee8pAVabBlN
+        s2C5Bu8wxzwPEqNf2loYg9VPmBpa9ZJSTb7PHi1L4tn1TlLN0NeopO2hJkdirLho4xAPaAjaZh95
+        rdYsI2OLTL27JVRX3WCpJ1l8xmmeyICT6MSaSU6bmBTPlS8VyQHGId9Txkp5Gxal50piU6F2Q0pv
+        tRfcxCKIolw3MeotybxY2lGxi4CehKq5lgW74MxcdJdJqOYQ9T6lZOks/exlzy75RTSiiE9OJUM7
+        UVJ0xZzqJYROfGVBiCkLz13AC4GtohJTaW4otjqvvUE+cwlVMDVFrn2anfZ2hG4EuCW+WKE4NNaa
+        SUyKTkG3uedlmhIlRlLYlknhAWGOiQlPREWhlDYnx5T0Uxvizs4qq7OeWkhGdjzZYZBmgnMSplSI
+        qKwzRIME0ig42CfKVaSuGoPLAof0kLSIBCNFa3yqacyPaEpKm6jdGlaYdmwS44egyTDyqloyrA7Q
+        Ys4+ZOG4YNrYRqOyc2PeOo4iJohOsyiLZ5WpyGnWgUTnEfGcFNioN0x7VbDEqGsec4V08sr5xEts
+        dua5iZlUC42aMumyizpRXby3wuCmZjwrXLXAZUaYkki1mZrIqyarLl1hpmnBNDOK7OA3yhW7nGJk
+        JOew+PFXTJYoa9PLAqMRuE6uKLkoRhdcekpMS49UhIr32XCN44RE6Q5aOIQiKpk9Y6NZshGlEXuF
+        qKmaCtVVyiJiEYnJbQrTJLIohcRFmCkbj5rSS1HGSMZnhYjodvymx4UUV+TM4sQgSaSPbsWHVBrh
+        pTAou5SZ+SXPmGo+S0NkFmTu1ZPYEx81Ie3Clua7b344cENsrfjw3wrLxQpiEASCtaImoKCoMX5S
+        /XElsMzs26NtgCk0D82PUOCN0skZaHroEMha95be7ZGQ/WDjJfAcd7em5edSI7lRdrYv1MUKnLuT
+        mElT6cvVzGm0Ewl84e4g7FMO7g/rWmnb8L7QNbU3gDkfeZS2th13CygN88VhuITKO33LQbdahJ6I
+        48jgn7f2rRhSwlVLj6cGE/dYTp/LskjSRNo1tUKD9IKlbGFbtyPOLZxVCQmjOE1YfBqQ/hQJ7/pf
+        Ez/aMgVNiA0AAA==
+    headers:
+      Cache-Control: [no-cache]
+      Connection: [keep-alive]
+      Content-Encoding: [gzip]
+      Content-Type: [text/html; charset=utf-8]
+      Date: ['Sun, 13 Aug 2017 15:10:00 GMT']
+      Server: [Server]
+      Set-Cookie: ['csid=BAhJIhgzODctNTg3NTcwNy00NDM1MDg1BjoGRVQ%3D--e627696ed804816789760477bf73feda962abc8a;
+          path=/; expires=Thu, 13 Aug 2037 15:10:00 -0000', locale=en; path=/, '_session_id2=62a850e655f04f7b7ec7225379a2a70f;
+          path=/; expires=Sun, 13 Aug 2017 21:10:00 -0000; HttpOnly']
+      Status: [404 Not Found]
+      Vary: ['Accept-Encoding,User-Agent']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [6A6TWG0TTWQ55Z11X578]
+      X-Runtime: ['0.022045']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.3]
+    method: GET
+    uri: https://goodreads.com/comment.xml?id=792532185&type=review
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA7PJKMnNsePlsslITUyxsynJLMlJtTM2MFTwzS9LTVEISC3KTcxLzSvJqbTRh0ja
+        6IOVArUk5adUKiSlJ+fn5BfZKpVnZJakKoHEk4HqU4vsbDIMcZkElLHRhyoD2Q1UDOUFpxaVpRYh
+        S+qDrAEzoE4FAKOZndSzAAAA
+    headers:
+      Connection: [keep-alive]
+      Content-Encoding: [gzip]
+      Content-Length: ['132']
+      Content-Type: [text/html]
+      Date: ['Sun, 13 Aug 2017 15:10:17 GMT']
+      Location: ['https://www.goodreads.com/comment.xml?key=P78YnKD8IcTJLSJM6OwWw&id=792532185&type=review']
+      Server: [Server]
+      Vary: ['Accept-Encoding,User-Agent']
+      X-Content-Type-Options: [nosniff]
+    status: {code: 301, message: Moved Permanently}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.3]
+    method: GET
+    uri: https://www.goodreads.com/comment.xml?id=792532185&type=review
+  response:
+    body:
+      string: !!binary |
+        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
+        rqzPbpu5zeyqH45Q+A2YzuaPwPwXxs0nlz9GAAA=
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate']
+      Connection: [keep-alive]
+      Content-Encoding: [gzip]
+      Content-Type: [application/xml; charset=utf-8]
+      Date: ['Sun, 13 Aug 2017 15:10:17 GMT']
+      ETag: [W/"334143eed1251b5bf167948eb05fa2f9"]
+      Server: [Server]
+      Set-Cookie: ['csid=BAhJIhgyODktNDcyMDI2OC00MTg4MzQ2BjoGRVQ%3D--86258fef670c9ea4adf9bb0ad7f7fe8e7cf8f036;
+          path=/; expires=Thu, 13 Aug 2037 15:10:17 -0000', locale=en; path=/, '_session_id2=6fb0c781139516f21eb9c72d18b123c8;
+          path=/; expires=Sun, 13 Aug 2017 21:10:17 -0000; HttpOnly']
+      Status: [200 OK]
+      Vary: ['User-Agent,Accept-Encoding']
+      X-Content-Type-Options: [nosniff, nosniff]
+      X-Frame-Options: [ALLOWALL]
+      X-Request-Id: [HPPYJ0BHPBK1HMG1B73F]
+      X-Runtime: ['0.123404']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1
