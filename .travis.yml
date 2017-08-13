@@ -1,0 +1,14 @@
+language: python
+sudo: false
+python:
+  - "3.6"
+cache:
+  directories:
+    - "$HOME/.cache/pip"
+install: "make install"
+before_script:
+  - pip freeze
+jobs:
+  include:
+    - stage: test
+      script: make test

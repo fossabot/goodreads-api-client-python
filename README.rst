@@ -35,10 +35,10 @@ To install locally
 
 .. code-block:: bash
 
-    $ python setup.py develop
+    $ make install
 
 And to test
 
 .. code-block:: bash
 
-    $ python setup.py test
+    $ make test
