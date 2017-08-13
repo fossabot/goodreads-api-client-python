@@ -34,3 +34,10 @@ class TestBook(ResourceTestCase):
 
         self.assertEqual(result['id'], '53732')
         self.assertEqual(result['title'], 'Dune')
+
+    @vcr.use_cassette('book/title.yaml')
+    def test_title(self):
+        result = self._book.title(author='Arthur Conan Doyle', title='Hound of the Baskervilles')
+
+        self.assertEqual(result['id'], '8921')
+        self.assertEqual(result['title'], 'The Hound of the Baskervilles')

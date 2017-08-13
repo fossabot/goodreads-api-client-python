@@ -33,3 +33,13 @@ class Book(Resource):
         endpoint = f'book/isbn/{isbn}'
         res = self._transport.req(endpoint=endpoint)
         return res['book']
+
+    def title(self, title: str, author: str=None, rating: int=None):
+        endpoint = 'book/title.xml'
+        params = {
+            'author': author,
+            'rating': rating,
+            'title': title,
+        }
+        res = self._transport.req(endpoint=endpoint, params=params)
+        return res['book']
