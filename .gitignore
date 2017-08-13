@@ -1,5 +1,7 @@
 .eggs/
 .envrc
 .python-version
+build/
+dist/
 
 *.egg-info
