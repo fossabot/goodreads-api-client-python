@@ -10,6 +10,7 @@ the Goodreads API
 from goodreads_api_client.resources.author import Author
 from goodreads_api_client.resources.book import Book
 from goodreads_api_client.resources.comment import Comment
+from goodreads_api_client.resources.read_status import ReadStatus
 from goodreads_api_client.resources.review import Review
 from goodreads_api_client.resources.series import Series
 from goodreads_api_client.resources.shelf import Shelf
@@ -21,6 +22,7 @@ __all__ = [
     'Author',
     'Book',
     'Comment',
+    'ReadStatus',
     'Review',
     'Series',
     'Shelf',
