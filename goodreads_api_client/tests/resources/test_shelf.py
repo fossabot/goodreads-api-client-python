@@ -1,7 +1,7 @@
 from collections import OrderedDict
 
 from goodreads_api_client.resources import Shelf
-from goodreads_api_client.tests.resources import ResourceTestCase, vcr
+from goodreads_api_client.tests.resources.conftest import ResourceTestCase, vcr
 
 
 class TestShelf(ResourceTestCase):

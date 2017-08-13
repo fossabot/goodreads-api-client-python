@@ -1,5 +1,5 @@
 from goodreads_api_client.resources import ReadStatus
-from goodreads_api_client.tests.resources import ResourceTestCase, vcr
+from goodreads_api_client.tests.resources.conftest import ResourceTestCase, vcr
 
 
 class TestReadStatus(ResourceTestCase):

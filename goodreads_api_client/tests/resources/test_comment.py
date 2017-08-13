@@ -1,5 +1,5 @@
 from goodreads_api_client.resources import Comment
-from goodreads_api_client.tests.resources import ResourceTestCase, vcr
+from goodreads_api_client.tests.resources.conftest import ResourceTestCase, vcr
 
 
 class TestComment(ResourceTestCase):

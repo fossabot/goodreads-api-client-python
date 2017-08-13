@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Module containing client with resources of Goodreads API."""
 
+from goodreads_api_client.exceptions import OauthEndpointNotImplemented
 from goodreads_api_client.resources import *
 from goodreads_api_client.transport import Transport
 
@@ -20,3 +21,21 @@ class Client(object):
 
         # Add resources
         self.Book = Book(transport=self._transport)
+
+    def auth_user(self):
+        raise OauthEndpointNotImplemented('auth.user')
+
+    def search_author(self, name: str):
+        endpoint = f'api/author_url/{name}'
+        res = self._transport.req(endpoint=endpoint)
+        return res['author']
+
+    def search_book(self, q: str, field: str='all', page: int=1):
+        endpoint = 'search/index'
+        params = {
+            'field': field,
+            'page': page,
+            'q': q,
+        }
+        res = self._transport.req(endpoint=endpoint, params=params)
+        return res['search']

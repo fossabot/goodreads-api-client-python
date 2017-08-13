@@ -1,5 +1,5 @@
 from goodreads_api_client.resources import Topic
-from goodreads_api_client.tests.resources import ResourceTestCase, vcr
+from goodreads_api_client.tests.resources.conftest import ResourceTestCase, vcr
 
 
 class TestTopic(ResourceTestCase):
