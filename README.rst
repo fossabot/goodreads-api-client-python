@@ -8,7 +8,7 @@ Installation
 
 .. code-block:: bash
 
-    $ pip install <TODO>
+    $ pip install goodreads_api_client
 
 Usage
 -----

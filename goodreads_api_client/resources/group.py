@@ -19,7 +19,8 @@ class Group(Resource):
         res = self._transport.req(endpoint=endpoint, params=params)
         return res['groups']
 
-    def members(self, id_: str, sort: str='first_name', q: str=None, page: int=1):
+    def members(self, id_: str, sort: str='first_name', q: str=None,
+                page: int=1):
         endpoint = f'group/members/{id_}'
         params = {
             'page': page,

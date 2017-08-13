@@ -8,4 +8,3 @@ from goodreads_api_client.resources.base import Resource
 class Notification(Resource):
     def view(self):
         raise OauthEndpointNotImplemented('notifications')
-

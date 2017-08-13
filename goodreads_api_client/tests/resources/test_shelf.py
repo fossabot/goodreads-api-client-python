@@ -14,5 +14,6 @@ class TestShelf(ResourceTestCase):
         shelves = result['user_shelf']
 
         self.assertEqual(len(shelves), 25)
-        self.assertEqual(shelves[0]['id'], OrderedDict([('@type', 'integer'), ('#text', '44154681')]))
+        self.assertEqual(shelves[0]['id'], OrderedDict([
+            ('@type', 'integer'), ('#text', '44154681')]))
         self.assertEqual(shelves[0]['name'], 'read')

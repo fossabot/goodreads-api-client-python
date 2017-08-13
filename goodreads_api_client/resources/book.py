@@ -23,7 +23,8 @@ class Book(Resource):
         params = {
             'isbns': ','.join(set(isbns)),
         }
-        res = self._transport.req(endpoint=endpoint, params=params, transform='json')
+        res = self._transport.req(endpoint=endpoint, params=params,
+                                  transform='json')
         return res['books']
 
     def show(self, id_: str):

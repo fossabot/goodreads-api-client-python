@@ -12,3 +12,5 @@ jobs:
   include:
     - stage: test
       script: make test
+    - stage: lint
+      script: make lint

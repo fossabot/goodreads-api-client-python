@@ -12,7 +12,8 @@ class TestSeries(ResourceTestCase):
 
         self.assertEqual(len(result), 119)
         self.assertEqual(result[0]['id'], '982770')
-        self.assertEqual(result[0]['series']['title'], 'The Stormlight Archive (GraphicAudio)')
+        self.assertEqual(result[0]['series']['title'],
+                         'The Stormlight Archive (GraphicAudio)')
 
     @vcr.use_cassette('series/show.yaml')
     def test_show(self):
@@ -27,4 +28,5 @@ class TestSeries(ResourceTestCase):
 
         self.assertEqual(len(result), 2)
         self.assertEqual(result[0]['id'], '178728')
-        self.assertEqual(result[0]['series']['title'], 'The Stormlight Archive')
+        self.assertEqual(result[0]['series']['title'],
+                         'The Stormlight Archive')

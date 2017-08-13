@@ -3,7 +3,10 @@
 
 
 class Resource(object):
-    """Base resource class. All Goodreads API resource classes should inherit this."""
+    """Base resource class.
+
+    All Goodreads API resource classes should inherit this.
+    """
     resource_name = 'resource'
 
     def __init__(self, transport=None):

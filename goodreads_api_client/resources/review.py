@@ -28,7 +28,8 @@ class Review(Resource):
     def show(self, id_: str):
         return self._show_single_resource(id_)
 
-    def show_by_user_and_book(self, user_id: str, book_id: str, include_review_on_work: bool=False):
+    def show_by_user_and_book(self, user_id: str, book_id: str,
+                              include_review_on_work: bool=False):
         endpoint = 'review/show_by_user_and_book.xml'
         params = {
             'book_id': book_id,

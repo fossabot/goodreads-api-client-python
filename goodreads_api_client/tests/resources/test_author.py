@@ -14,8 +14,8 @@ class TestAuthor(ResourceTestCase):
         books = result['book']
 
         self.assertEqual(len(result), 4)
-        # TODO: Convert XML cdata + type attribute to a single value whose type reflects type attribute
-        self.assertEqual(books[0]['id'], OrderedDict([('@type', 'integer'), ('#text', '104744')]))
+        self.assertEqual(books[0]['id'], OrderedDict([('@type', 'integer'),
+                                                      ('#text', '104744')]))
         self.assertEqual(books[0]['isbn'], '1565927249')
 
     @vcr.use_cassette('author/show.yaml')

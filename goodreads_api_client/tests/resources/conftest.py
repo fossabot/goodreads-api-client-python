@@ -13,7 +13,8 @@ class ResourceTestCase(unittest.TestCase):
 
         Taken from https://gist.github.com/twolfson/13f5f5784f67fd49b245.
         """
-        if cls is not ResourceTestCase and cls.setUp is not ResourceTestCase.setUp:
+        if cls is not ResourceTestCase and \
+                cls.setUp is not ResourceTestCase.setUp:
             child_setup = cls.setUp
 
             def merged_setup(self, *args, **kwargs):

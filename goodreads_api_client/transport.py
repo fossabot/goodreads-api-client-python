@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Module containing transport that underlies all requests made to the Goodreads API"""
+"""
+goodreads_api_client.transport
+~~~~~
+
+Contains transport underlying all requests made to the Goodreads API.
+"""
 
 from collections import OrderedDict
 import json
@@ -9,14 +14,14 @@ import xmltodict
 
 
 class Transport(object):
-    """Makes requests to Goodreads API and applies lightweight transform to response."""
+    """Makes requests to Goodreads API and applies transform to response."""
 
     def __init__(self, developer_key: str, base_url: str=None):
         """Initialize with credentials.
 
-        :param str developer_key: Your Goodreads developer key. Find or generate
-            one from here <https://goodreads.com/api/keys>
-        :param str/None base_url: The base URL to use to contact the Goodreads API.
+        :param str developer_key: Your Goodreads developer key. Find or
+            generate one here <https://goodreads.com/api/keys>
+        :param str/None base_url: Base URL of the Goodreads API.
             Defaults to https://goodreads.com.
         """
         if base_url is None:
@@ -26,7 +31,8 @@ class Transport(object):
 
         self.developer_key = developer_key
 
-    def _req(self, method: str='GET', endpoint: str=None, params: dict=None, data: dict=None):
+    def _req(self, method: str='GET', endpoint: str=None, params: dict=None,
+             data: dict=None):
         if params is None:
             params = {}
 
@@ -55,6 +61,7 @@ class Transport(object):
             return OrderedDict(content.items())
         return res.text
 
-    def req(self, method: str='GET', endpoint: str=None, params: dict=None, data: dict=None, transform: str='xml'):
+    def req(self, method: str='GET', endpoint: str=None, params: dict=None,
+            data: dict=None, transform: str='xml'):
         res = self._req(method, endpoint, params, data)
         return Transport._transform_res(res, transform)
