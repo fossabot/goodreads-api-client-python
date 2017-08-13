@@ -1,0 +1,102 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.3]
+    method: GET
+    uri: https://goodreads.com/review/show_by_user_and_book.xml?book_id=50&include_review_on_work=False&user_id=1
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA7PJKMnNsePlsslITUyxsynJLMlJtTM2MFTwzS9LTVEISC3KTcxLzSvJqbTRh0ja
+        6IOVArUk5adUKiSlJ+fn5BfZKpVnZJakKoHEk4HqU4vsbDIMcZkElLHRhyoD2Q1UDOUFpxaVpRYh
+        S+qDrAEzoE4FAKOZndSzAAAA
+    headers:
+      Connection: [keep-alive]
+      Content-Encoding: [gzip]
+      Content-Length: ['132']
+      Content-Type: [text/html]
+      Date: ['Sun, 13 Aug 2017 15:24:22 GMT']
+      Location: ['https://www.goodreads.com/review/show_by_user_and_book.xml?key=P78YnKD8IcTJLSJM6OwWw&book_id=50&include_review_on_work=False&user_id=1']
+      Server: [Server]
+      Vary: ['Accept-Encoding,User-Agent']
+      X-Content-Type-Options: [nosniff]
+    status: {code: 301, message: Moved Permanently}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.3]
+    method: GET
+    uri: https://www.goodreads.com/review/show_by_user_and_book.xml?book_id=50&include_review_on_work=False&user_id=1
+  response:
+    body:
+      string: !!binary |
+        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
+        f4NFZ3IuX5f/A8igbyaYFgAA
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate']
+      Connection: [keep-alive]
+      Content-Encoding: [gzip]
+      Content-Type: [application/xml; charset=utf-8]
+      Date: ['Sun, 13 Aug 2017 15:24:23 GMT']
+      ETag: [W/"b0aabc534e00160ea27fbe62418a5961"]
+      Server: [Server]
+      Set-Cookie: ['csid=BAhJIhgxNTQtNjk4MzMwMi05MDU1NjI5BjoGRVQ%3D--09bf1707597a3cbfd5f1d7b94dccc1ec98b22cac;
+          path=/; expires=Thu, 13 Aug 2037 15:24:23 -0000', locale=en; path=/, '_session_id2=bdebce6bd3f751bc443e2aba4eef2742;
+          path=/; expires=Sun, 13 Aug 2017 21:24:23 -0000; HttpOnly']
+      Status: [200 OK]
+      Vary: ['Accept-Encoding,User-Agent']
+      X-Content-Type-Options: [nosniff, nosniff]
+      X-Frame-Options: [ALLOWALL]
+      X-Request-Id: [XQVRWMKY7CDC24K204BY]
+      X-Runtime: ['0.241646']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1
