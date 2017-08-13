@@ -43,7 +43,7 @@ def make_vcr():
                                         'cassettes')
     return VCR(cassette_library_dir=cassette_library_dir,
                filter_query_parameters=['key'],
-               record_mode='once')
+               record_mode='new_episodes')
 
 
 vcr = make_vcr()

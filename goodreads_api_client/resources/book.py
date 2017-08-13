@@ -13,7 +13,7 @@ class Book(Resource):
         return res['work-ids']
 
     def isbn_to_id(self, isbns: Iterable[str]):
-        raise NotImplementedError('API docs are wrong, this endpoint 404s always')
+        raise NotImplementedError('API always 404s on this endpoint')
 
     def review_counts(self, isbns: Iterable[str]):
         # This endpoint 406s on non-json content type

@@ -9,5 +9,6 @@ the Goodreads API
 
 from goodreads_api_client.resources.author import Author
 from goodreads_api_client.resources.book import Book
+from goodreads_api_client.resources.user import User
 
-__all__ = ['Author', 'Book']
+__all__ = ['Author', 'Book', 'User']
