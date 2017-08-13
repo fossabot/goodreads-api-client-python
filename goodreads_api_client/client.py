@@ -2,7 +2,7 @@
 """Module containing client with resources of Goodreads API."""
 
 from goodreads_api_client.exceptions import OauthEndpointNotImplemented
-from goodreads_api_client.resources import *
+import goodreads_api_client.resources as resources
 from goodreads_api_client.transport import Transport
 
 
@@ -18,9 +18,13 @@ class Client(object):
             Defaults to https://goodreads.com.
         """
         self._transport = Transport(developer_key, base_url)
+        self._load_resources()
 
-        # Add resources
-        self.Book = Book(transport=self._transport)
+    def _load_resources(self):
+        resource_dict = dict([(name, cls) for name, cls in resources.__dict__.items() if isinstance(cls, type)])
+
+        for resource_name, resource_cls in resource_dict.items():
+            setattr(self, resource_name, resource_cls(transport=self._transport))
 
     def auth_user(self):
         raise OauthEndpointNotImplemented('auth.user')
