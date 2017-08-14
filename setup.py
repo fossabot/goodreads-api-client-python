@@ -16,35 +16,25 @@ with open('goodreads_api_client/__init__.py', 'rb') as f:
     version = str(ast.literal_eval(_version_re.search(
         f.read().decode('utf-8')).group(1)))
 
-tests_require = [
-    'pycodestyle==2.3.1',
-    'vcrpy==1.11.1',
-]
+with open('README.rst', 'r') as f:
+    readme = f.read()
 
-install_requires = [
-    'requests==2.18.3',
-    'xmltodict==0.11.0',
-]
 
-publish_requires = [
-    'twine==1.9.1',
-    'wheel==0.29.0',
-]
+def read_requires(group):
+    with open('./requirements/{}.txt'.format(group)) as reqs_txt:
+        return [line for line in reqs_txt]
 
-docs_requires = [
-    'Sphinx==1.6.3',
-    'sphinx-autodoc-annotation==1.0.post1',
-    'sphinx-rtd-theme==0.2.4',
-]
+
+docs_requires = read_requires('docs')
+install_requires = read_requires('install')
+publish_requires = read_requires('publish')
+test_require = read_requires('test')
 
 extras_require = {
     'docs': docs_requires,
     'publish': publish_requires,
-    'test': tests_require,
+    'test': test_require,
 }
-
-with open('README.rst', 'r') as f:
-    readme = f.read()
 
 setup(
     name='goodreads_api_client',
@@ -67,7 +57,7 @@ setup(
     ],
     packages=['goodreads_api_client'],
     extras_require=extras_require,
-    tests_require=tests_require,
+    tests_require=test_require,
     install_requires=install_requires,
     test_suite='goodreads_api_client.tests',
     include_package_data=True,

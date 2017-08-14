@@ -1,5 +1,6 @@
 .eggs/
 .envrc
+.git/
 .python-version
 
 build/
