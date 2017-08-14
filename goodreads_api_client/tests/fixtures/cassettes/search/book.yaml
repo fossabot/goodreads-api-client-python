@@ -7,65 +7,38 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.18.3]
     method: GET
-    uri: https://goodreads.com/search/index?field=all&page=1&q=Highprince+of+War
+    uri: http://www.goodreads.com/search/index?field=all&format=xml&page=1&q=Highprince+of+War
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA7PJKMnNsePlsslITUyxsynJLMlJtTM2MFTwzS9LTVEISC3KTcxLzSvJqbTRh0ja
-        6IOVArUk5adUKiSlJ+fn5BfZKpVnZJakKoHEk4HqU4vsbDIMcZkElLHRhyoD2Q1UDOUFpxaVpRYh
-        S+qDrAEzoE4FAKOZndSzAAAA
-    headers:
-      Connection: [keep-alive]
-      Content-Encoding: [gzip]
-      Content-Length: ['132']
-      Content-Type: [text/html]
-      Date: ['Sun, 13 Aug 2017 17:05:17 GMT']
-      Location: ['https://www.goodreads.com/search/index?key=P78YnKD8IcTJLSJM6OwWw&field=all&page=1&q=Highprince+of+War']
-      Server: [Server]
-      Vary: ['Accept-Encoding,User-Agent']
-      X-Content-Type-Options: [nosniff]
-    status: {code: 301, message: Moved Permanently}
-- request:
-    body: null
-    headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.3]
-    method: GET
-    uri: https://www.goodreads.com/search/index?field=all&page=1&q=Highprince+of+War
-  response:
-    body:
-      string: !!binary |
-        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
+        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
     headers:
       Cache-Control: ['max-age=0, private, must-revalidate']
-      Connection: [keep-alive]
       Content-Encoding: [gzip]
       Content-Type: [application/xml; charset=utf-8]
-      Date: ['Sun, 13 Aug 2017 17:05:18 GMT']
-      ETag: [W/"be32ac19358b32c024408c29de5221f6"]
+      Date: ['Mon, 14 Aug 2017 17:54:01 GMT']
+      ETag: [W/"f32553879488f4fd9487808b45caaff1"]
       Server: [Server]
-      Set-Cookie: ['csid=BAhJIhgwNjUtMzc4NTgxMi00MzY1ODE5BjoGRVQ%3D--72dfdf8372dd0a5a4e8458f35074c1337eb5718a;
-          path=/; expires=Thu, 13 Aug 2037 17:05:17 -0000', locale=en; path=/, '_session_id2=0155d470386ed53b2ebaed0909bb6743;
-          path=/; expires=Sun, 13 Aug 2017 23:05:17 -0000; HttpOnly']
+      Set-Cookie: ['csid=BAhJIhgwNjAtNzA1NjMwOS02MzExNjUzBjoGRVQ%3D--0dd9f09d72c3b3675a27f616b487bde2e3633b91;
+          path=/; expires=Fri, 14 Aug 2037 17:54:01 -0000', locale=en; path=/, '_session_id2=4962ef7016c3af4f68c335e7479d568a;
+          path=/; expires=Mon, 14 Aug 2017 23:54:01 -0000; HttpOnly']
       Status: [200 OK]
       Vary: ['User-Agent,Accept-Encoding']
       X-Content-Type-Options: [nosniff, nosniff]
       X-Frame-Options: [ALLOWALL]
-      X-Request-Id: [3X55NKXPA9WB79YPKCTK]
-      X-Runtime: ['0.077197']
+      X-Request-Id: [073201ET03JQGGZW362F]
+      X-Runtime: ['0.100937']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
 version: 1

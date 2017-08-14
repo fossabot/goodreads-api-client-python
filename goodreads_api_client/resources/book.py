@@ -36,7 +36,7 @@ class Book(Resource):
         return res['book']
 
     def title(self, title: str, author: str=None, rating: int=None):
-        endpoint = 'book/title.xml'
+        endpoint = 'book/title'
         params = {
             'author': author,
             'rating': rating,

@@ -8,7 +8,7 @@ class Event(Resource):
     resource_name = 'event'
 
     def list(self, lat: str, lng: str, country_code: str, postal_code: str):
-        endpoint = 'event/index.xml'
+        endpoint = 'event/index'
         params = {
             'lat': lat,
             'lng': lng,

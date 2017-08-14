@@ -56,7 +56,9 @@ Resources
 Rationale
 ---------
 
-There are a number of Goodreads API wrapper libraries out there, but most are either abandoned or the code is some combination of odd, undocumented, untested, or incomplete in its API coverage.
+There are a number of Goodreads API wrapper libraries out there, but most are
+either abandoned or the code is some combination of odd, undocumented,
+untested, or incomplete in its API coverage.
 
 Contributing
 ------------

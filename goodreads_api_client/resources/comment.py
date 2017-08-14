@@ -10,7 +10,7 @@ class Comment(Resource):
         raise OauthEndpointNotImplemented('comment.create')
 
     def list(self, id_: str, resource_type: str='review'):
-        endpoint = 'comment.xml'
+        endpoint = 'comment'
         params = {
             'id': id_,
             'type': resource_type,

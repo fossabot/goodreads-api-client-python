@@ -21,7 +21,7 @@ class Review(Resource):
         raise OauthEndpointNotImplemented('review.list')
 
     def recent_reviews(self):
-        endpoint = 'review/recent_reviews.xml'
+        endpoint = 'review/recent_reviews'
         res = self._transport.req(endpoint=endpoint)
         return res['reviews']
 
@@ -30,7 +30,7 @@ class Review(Resource):
 
     def show_by_user_and_book(self, user_id: str, book_id: str,
                               include_review_on_work: bool=False):
-        endpoint = 'review/show_by_user_and_book.xml'
+        endpoint = 'review/show_by_user_and_book'
         params = {
             'book_id': book_id,
             'include_review_on_work': include_review_on_work,

@@ -7,33 +7,7 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.18.3]
     method: GET
-    uri: https://goodreads.com/series/work/8134945
-  response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAAA7PJKMnNsePlsslITUyxsynJLMlJtTM2MFTwzS9LTVEISC3KTcxLzSvJqbTRh0ja
-        6IOVArUk5adUKiSlJ+fn5BfZKpVnZJakKoHEk4HqU4vsbDIMcZkElLHRhyoD2Q1UDOUFpxaVpRYh
-        S+qDrAEzoE4FAKOZndSzAAAA
-    headers:
-      Connection: [keep-alive]
-      Content-Encoding: [gzip]
-      Content-Length: ['132']
-      Content-Type: [text/html]
-      Date: ['Sun, 13 Aug 2017 14:26:20 GMT']
-      Location: ['https://www.goodreads.com/series/work/8134945?key=P78YnKD8IcTJLSJM6OwWw']
-      Server: [Server]
-      Vary: ['Accept-Encoding,User-Agent']
-      X-Content-Type-Options: [nosniff]
-    status: {code: 301, message: Moved Permanently}
-- request:
-    body: null
-    headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.3]
-    method: GET
-    uri: https://www.goodreads.com/series/work/8134945
+    uri: http://www.goodreads.com/series/work/8134945?format=xml
   response:
     body:
       string: !!binary |
@@ -62,21 +36,20 @@ interactions:
         9D0+/X6E/4/7AV9oWHj+rfkf497UhaYKAAA=
     headers:
       Cache-Control: ['max-age=0, private, must-revalidate']
-      Connection: [keep-alive]
       Content-Encoding: [gzip]
       Content-Type: [application/xml; charset=utf-8]
-      Date: ['Sun, 13 Aug 2017 14:26:20 GMT']
+      Date: ['Mon, 14 Aug 2017 17:53:59 GMT']
       ETag: [W/"1e4003eded9d3e8a3abbc10544169a5f"]
       Server: [Server]
-      Set-Cookie: ['csid=BAhJIhg4OTktMTc5MTg3Ny04NzAxOTAzBjoGRVQ%3D--4cdbd483d97c23ca9a6c69b329eb70df63bce167;
-          path=/; expires=Thu, 13 Aug 2037 14:26:20 -0000', locale=en; path=/, '_session_id2=c29b88f827ff32242f40bd963d3627d0;
-          path=/; expires=Sun, 13 Aug 2017 20:26:20 -0000; HttpOnly']
+      Set-Cookie: ['csid=BAhJIhg4ODctNDY0NjIxOC00NTAyMDM1BjoGRVQ%3D--dd460c065b900d601d94b13839194076c34ca250;
+          path=/; expires=Fri, 14 Aug 2037 17:53:59 -0000', locale=en; path=/, '_session_id2=3a86e3a22472acdb90fbbfd007543cf6;
+          path=/; expires=Mon, 14 Aug 2017 23:53:59 -0000; HttpOnly']
       Status: [200 OK]
       Vary: ['Accept-Encoding,User-Agent']
       X-Content-Type-Options: [nosniff, nosniff]
       X-Frame-Options: [ALLOWALL]
-      X-Request-Id: [HTGSSHWM0MV0A2Q8GK7Q]
-      X-Runtime: ['0.054828']
+      X-Request-Id: [10KFZV4JA6AHM9BFXVJY]
+      X-Runtime: ['0.051671']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
 version: 1

@@ -5,7 +5,7 @@ API Documentation
 
 .. automodule:: goodreads_api_client
 
-This part of the documentation covers the interfaces of goodreads_api_client. 
+This part of the documentation covers the interfaces of goodreads_api_client.
 
 Main Interface
 --------------

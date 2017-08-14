@@ -9,15 +9,18 @@ from goodreads_api_client.transport import Transport
 class Client(object):
     """Makes API Calls to the Goodreads API <https://goodreads.com/api>."""
 
-    def __init__(self, developer_key: str, base_url: str=None):
+    def __init__(self, developer_key: str, developer_secret: str=None,
+                 base_url: str=None):
         """Initialize Goodreads API client with credentials.
 
         :param str developer_key: Your Goodreads developer key. Find or
             generate one here <https://goodreads.com/api/keys>
+        :param str developer_secret: Your Goodreads developer secret
         :param str/None base_url: Base URL of the Goodreads API.
             Defaults to https://goodreads.com.
         """
-        self._transport = Transport(developer_key, base_url)
+        self._transport = Transport(developer_key, developer_secret, base_url)
+
         self._load_resources()
 
     def _load_resources(self):
@@ -28,6 +31,9 @@ class Client(object):
         for resource_name, resource_cls in resource_dict.items():
             setattr(self, resource_name,
                     resource_cls(transport=self._transport))
+
+    def authorize(self):
+        self._transport.authorize()
 
     def auth_user(self):
         raise OauthEndpointNotImplemented('auth.user')

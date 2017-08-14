@@ -7,60 +7,33 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.18.3]
     method: GET
-    uri: https://goodreads.com/group/list/13686342?sort=title
+    uri: http://www.goodreads.com/group/list/13686342?format=xml&sort=title
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA7PJKMnNsePlsslITUyxsynJLMlJtTM2MFTwzS9LTVEISC3KTcxLzSvJqbTRh0ja
-        6IOVArUk5adUKiSlJ+fn5BfZKpVnZJakKoHEk4HqU4vsbDIMcZkElLHRhyoD2Q1UDOUFpxaVpRYh
-        S+qDrAEzoE4FAKOZndSzAAAA
-    headers:
-      Connection: [keep-alive]
-      Content-Encoding: [gzip]
-      Content-Length: ['132']
-      Content-Type: [text/html]
-      Date: ['Sun, 13 Aug 2017 15:56:56 GMT']
-      Location: ['https://www.goodreads.com/group/list/13686342?key=P78YnKD8IcTJLSJM6OwWw&sort=title']
-      Server: [Server]
-      Vary: ['Accept-Encoding,User-Agent']
-      X-Content-Type-Options: [nosniff]
-    status: {code: 301, message: Moved Permanently}
-- request:
-    body: null
-    headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.3]
-    method: GET
-    uri: https://www.goodreads.com/group/list/13686342?sort=title
-  response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAAA2WSX0+DMBTF3/cpkPfR/R8xpcvionG6aOaM0WVZGrhCFVpsL8756aXFxalPHA6/
-        e+/pLXTyUeTeO2gjlIz8btDxPZCxSoRMI/9+dd4O/Qlr0QulEg08MUswpZIGWMvz6BLeKjBodf3G
-        K8xAoog51s0Y6goo+WM6smZfYc/oyfpsNl1N17fj8FFezcLLeDW/vpsvRje7h91mwyixWNO8AMxU
-        8lOTalWV21wYdOD3ZxuKHKWiDjMubGVAOyESD/clRL6QCClon3X7o3DUH/QoEYlDnoU2uJW8ALYQ
-        cQZ5Xh/lyLRMzg/IU8ZlSsmPcRjXdCiSzwawCRrLAmVvKwqewrbSOcsQS3NKiHNMkOo2NwbQBLEq
-        iK0zpDsYjged4SgMyx45JA5eynryr1Yt6gpYyw6JVSWRdShphMtd78wzyDVGvrvtxD1RIc+tcgsg
-        lqrvnRwWWMv//8AXHH2u3z4CAAA=
+        H4sIAAAAAAAAA2WSXU/CMBSG7/kVc/esfLOYroRINKJEgxijhJBmO27VrZ3tmYi/3rWTiHq1d2+f
+        c87bDzr5KHLvHbQRSkZ+N+j4HshYJUKmkX+/Om+H/oS16IVSiQaemCWYUkkDrOV5dAlvFRi0uv7j
+        FWYgUcQc62YMdQWU/DEdWbOvsGf0ZH02m66m69tx+CivZuFlvJpf380Xo5vdw26zYZRYrGleAGYq
+        +alJtarKbS4MOvB72YYiR6mow4wLWxnQTojEw30JkS8kQgraZ93+KBz1Bz1KROKQZ6ENbiUvgC1E
+        nEGe11s5Mi2T8wPylHGZUvJjHMY1HYrkswFsgsayQNnbioKnsK10zjLE8pQQZ5gg1W1uDKAJYlUQ
+        W2ZIdzAcDzrDURiWPXIIHLyU9eBfnVrUFbCWnRGrSiLrUNIIF7s+Ms8g1xj57rIT90WFPLfK7Z9Y
+        qr52cji/Wv5/Al8Exqd0PQIAAA==
     headers:
       Cache-Control: ['max-age=0, private, must-revalidate']
-      Connection: [keep-alive]
       Content-Encoding: [gzip]
       Content-Type: [application/xml; charset=utf-8]
-      Date: ['Sun, 13 Aug 2017 15:56:56 GMT']
-      ETag: [W/"7dbd51d6b39c62e5fd6eda54fa95b008"]
+      Date: ['Mon, 14 Aug 2017 17:53:52 GMT']
+      ETag: [W/"8f03009dd120103bbf84137bd7a8d848"]
       Server: [Server]
-      Set-Cookie: ['csid=BAhJIhgyMjgtMzMzMDg5OC02MDgyMDg4BjoGRVQ%3D--984b0c8d53c6fbe29a4b7caf183a453ecace3f61;
-          path=/; expires=Thu, 13 Aug 2037 15:56:56 -0000', locale=en; path=/, '_session_id2=fffb6db5904d2dec6e4271f936db957c;
-          path=/; expires=Sun, 13 Aug 2017 21:56:56 -0000; HttpOnly']
+      Set-Cookie: ['csid=BAhJIhg1MTQtMDYzNzc5MC02ODM5OTE2BjoGRVQ%3D--9170589e256103f3ba8e925d826adf7c350bea20;
+          path=/; expires=Fri, 14 Aug 2037 17:53:51 -0000', locale=en; path=/, '_session_id2=9429eded6fed441fba118894d9b4b5ae;
+          path=/; expires=Mon, 14 Aug 2017 23:53:52 -0000; HttpOnly']
       Status: [200 OK]
       Vary: ['Accept-Encoding,User-Agent']
       X-Content-Type-Options: [nosniff, nosniff]
       X-Frame-Options: [ALLOWALL]
-      X-Request-Id: [VEV5TYRXZ17ZS4ARFQM2]
-      X-Runtime: ['0.068323']
+      X-Request-Id: [0PNVVSWJ0VRTK86R9DFK]
+      X-Runtime: ['0.104842']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
 version: 1

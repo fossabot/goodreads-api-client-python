@@ -13,7 +13,7 @@ class Shelf(Resource):
         raise OauthEndpointNotImplemented('shelf.add_books_to_shelves')
 
     def list(self, user_id: str):
-        endpoint = 'shelf/list.xml'
+        endpoint = 'shelf/list'
         params = {
             'user_id': user_id,
         }

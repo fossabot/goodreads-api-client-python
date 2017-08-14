@@ -1,6 +1,8 @@
 import unittest
+from unittest.mock import patch
 
-from goodreads_api_client.tests.conftest import developer_key
+import requests
+from goodreads_api_client.tests.conftest import developer_key, developer_secret
 from goodreads_api_client.transport import Transport
 
 
@@ -22,4 +24,13 @@ class ResourceTestCase(unittest.TestCase):
             cls.setUp = merged_setup
 
     def setUp(self):
-        self._transport = Transport(developer_key=developer_key)
+        self._transport = Transport(developer_key=developer_key,
+                                    developer_secret=developer_secret)
+
+        patch_transport = patch.object(Transport, 'session', requests)
+        patch_transport.start()
+
+        self.addCleanup(patch_transport.stop)
+
+        if self._transport.is_using_session():
+            self.addCleanup(self._transport.session.close)

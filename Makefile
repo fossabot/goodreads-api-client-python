@@ -11,8 +11,13 @@ docs:
 install:
 	pip install .[docs,publish,test]
 
-lint:
-	pycodestyle setup.py goodreads_api_client
+lint-py:
+	flake8 setup.py goodreads_api_client
+
+lint-rst:
+	doc8 README.rst docs/*.rst
+
+lint: lint-py lint-rst
 
 publish: clean
 	python setup.py sdist bdist_wheel
