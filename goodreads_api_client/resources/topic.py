@@ -12,7 +12,7 @@ class Topic(Resource):
         raise OauthEndpointNotImplemented('topic.create')
 
     def group_folder(self, id_: str):
-        endpoint = f'topic/group_folder/{id_}'
+        endpoint = 'topic/group_folder/{}'.format(id_)
         res = self._transport.req(endpoint=endpoint)
         return res['group_folder']
 

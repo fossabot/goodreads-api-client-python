@@ -38,7 +38,7 @@ class Transport(object):
 
         res = requests.request(
             method=method,
-            url=f'{self.base_url}/{endpoint}',
+            url='{}/{}'.format(self.base_url, endpoint),
             params={
                 'key': self.developer_key,
                 **params

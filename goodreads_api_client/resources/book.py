@@ -10,7 +10,7 @@ class Book(Resource):
 
     def id_to_work_id(self, ids: Iterable[str]):
         id_csv = ','.join(ids)
-        endpoint = f'book/id_to_work_id/{id_csv}'
+        endpoint = 'book/id_to_work_id/{}'.format(id_csv)
         res = self._transport.req(endpoint=endpoint)
         return res['work-ids']
 
@@ -31,7 +31,7 @@ class Book(Resource):
         return self._show_single_resource(id_)
 
     def show_by_isbn(self, isbn: str):
-        endpoint = f'book/isbn/{isbn}'
+        endpoint = 'book/isbn/{}'.format(isbn)
         res = self._transport.req(endpoint=endpoint)
         return res['book']
 

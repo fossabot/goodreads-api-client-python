@@ -12,7 +12,7 @@ class Author(Resource):
 
         TODO: Add pagination support
         """
-        endpoint = f'author/list/{id_}'
+        endpoint = 'author/list/{}'.format(id_)
         res = self._transport.req(endpoint=endpoint)
         return res['author']['books']
 

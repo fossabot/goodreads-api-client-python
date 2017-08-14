@@ -33,7 +33,7 @@ class Client(object):
         raise OauthEndpointNotImplemented('auth.user')
 
     def search_author(self, name: str):
-        endpoint = f'api/author_url/{name}'
+        endpoint = 'api/author_url/{}'.format(name)
         res = self._transport.req(endpoint=endpoint)
         return res['author']
 

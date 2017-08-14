@@ -14,6 +14,6 @@ class Resource(object):
 
     def _show_single_resource(self, id_: str):
         name = self.__class__.resource_name
-        endpoint = f'{name}/show/{id_}'
+        endpoint = '{}/show/{}'.format(name, id_)
         res = self._transport.req(endpoint=endpoint)
         return res[name]

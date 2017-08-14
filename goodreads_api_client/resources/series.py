@@ -19,6 +19,6 @@ class Series(Resource):
         return self._show_single_resource(id_)
 
     def work(self, work_id: str):
-        endpoint = f'series/work/{work_id}'
+        endpoint = 'series/work/{}'.format(work_id)
         res = self._transport.req(endpoint=endpoint)
         return res['series_works']['series_work']

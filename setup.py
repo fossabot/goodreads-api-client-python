@@ -31,7 +31,14 @@ publish_requires = [
     'wheel==0.29.0',
 ]
 
+docs_requires = [
+    'Sphinx==1.6.3',
+    'sphinx-autodoc-annotation==1.0.post1',
+    'sphinx-rtd-theme==0.2.4',
+]
+
 extras_require = {
+    'docs': docs_requires,
     'publish': publish_requires,
     'test': tests_require,
 }
@@ -54,6 +61,7 @@ setup(
         'Natural Language :: English',
         'Operating System :: MacOS :: MacOS X',
         'Programming Language :: Python',
+        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Topic :: Software Development',
     ],

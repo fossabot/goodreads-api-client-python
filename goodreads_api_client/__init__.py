@@ -10,6 +10,6 @@ Goodreads API Client is a non-official Python client for
 from goodreads_api_client.client import Client
 
 
-VERSION = '0.1.0.dev2'
+VERSION = '0.1.0.dev3'
 
 __all__ = ('VERSION', 'Client')

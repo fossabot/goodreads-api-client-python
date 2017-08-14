@@ -12,7 +12,7 @@ class Group(Resource):
         raise OauthEndpointNotImplemented('group.join')
 
     def list(self, user_id: str, sort: str='title'):
-        endpoint = f'group/list/{user_id}'
+        endpoint = 'group/list/{}'.format(user_id)
         params = {
             'sort': sort,
         }
@@ -21,7 +21,7 @@ class Group(Resource):
 
     def members(self, id_: str, sort: str='first_name', q: str=None,
                 page: int=1):
-        endpoint = f'group/members/{id_}'
+        endpoint = 'group/members/{}'.format(id_)
         params = {
             'page': page,
             'sort': sort,

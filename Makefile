@@ -1,19 +1,24 @@
 clean:
-	rm -rf build dist .eggs *.egg-info
+	rm -rf build dist .eggs *.egg-info docs/_build
 
 .PHONY: docs
 docs:
 	cd docs && make html
 	@echo "\033[95m\n\nBuild successful! View the docs homepage at docs/_build/html/index.html.\n\033[0m"
 
-install:
-	python setup.py develop && pip install .[test]
+install-dev:
+	python setup.py develop
 
 install-docs:
-	pip install -r docs/requirements.txt
+	pip install .[docs]
 
 install-publish:
 	pip install .[publish]
+
+install-test:
+	pip install .[test]
+
+install: install-dev install-docs install-publish install-test
 
 lint:
 	pycodestyle setup.py goodreads_api_client
