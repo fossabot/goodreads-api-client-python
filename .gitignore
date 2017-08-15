@@ -1,6 +1,7 @@
 .eggs/
 .envrc
 .python-version
+.tox/
 
 build/
 dist/

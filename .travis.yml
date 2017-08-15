@@ -1,13 +1,16 @@
 language: python
 sudo: false
-python:
-  - "3.5"
-install: "make install"
+install:
+  - make install
 before_script:
   - pip freeze
+script:
+  - tox
 jobs:
   include:
-    - stage: test
-      script: make test
-    - stage: lint
-      script: make lint
+    - stage: core
+      python: 3.5
+      env: TOXENV=py35
+    - stage: core
+      python: 3.6
+      env: TOXENV=py36
