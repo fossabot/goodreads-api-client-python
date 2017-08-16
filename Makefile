@@ -1,7 +1,16 @@
 all: test
 
 clean:
-	rm -rf .eggs/ build/ dist/ docs/_build/ *.egg-info/
+	rm -rf .eggs/ build/ dist/ docs/_build/ htmlcov/ *.egg-info/ .coverage
+	-find . -name '__pycache__' -prune -exec rm -rf "{}" \;
+	-find . -name '*.pyc' -delete
+
+coverage:
+	coverage run setup.py test
+	coverage html
+
+coverage-report:
+	codeclimate-test-reporter
 
 .PHONY: docs
 docs:
