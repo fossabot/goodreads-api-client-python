@@ -25,14 +25,10 @@ def read_requires(group):
         return [line for line in reqs_txt]
 
 
-docs_requires = read_requires('docs')
 install_requires = read_requires('install')
-publish_requires = read_requires('publish')
 test_require = read_requires('test')
 
 extras_require = {
-    'docs': docs_requires,
-    'publish': publish_requires,
     'test': test_require,
 }
 

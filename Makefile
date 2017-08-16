@@ -1,34 +1,35 @@
 all: test
 
 clean:
-	rm -rf .eggs/ build/ dist/ docs/_build/ *.egg-info/
+	rm -rf .eggs/ build/ dist/ docs/_build/ *.egg-info/ .tox
+	-find . -name '__pycache__' -prune -exec rm -rf "{}" \;
+	-find . -name '*.pyc' -delete
 
 .PHONY: docs
 docs:
-	cd docs && make html
-	@echo "\033[95m\n\nBuild successful! View the docs homepage at docs/_build/html/index.html.\n\033[0m"
+	tox -e docs
 
 install:
-	pip install .[docs,publish,test]
+	pip install tox
+	pip install .[test]
 
 lint-py:
-	flake8 setup.py goodreads_api_client
+	tox -e flake8
 
 lint-rst:
-	doc8 README.rst docs/*.rst
+	tox -e doc8
 
-lint: lint-py lint-rst
+lint:
+	tox -e lint
 
 publish: clean
-	python setup.py sdist bdist_wheel
-	twine upload dist/*
+	tox -e release
 
 publish-test: clean
-	python setup.py sdist bdist_wheel
-	twine upload dist/* -r pypitest
+	tox -e testrelease
 
 test:
-	python setup.py test
+	tox -e py35
 
 ##################################
 # Docker container management

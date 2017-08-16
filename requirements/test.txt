@@ -1,4 +1,1 @@
-doc8
-flake8
-tox
 vcrpy==1.11.1

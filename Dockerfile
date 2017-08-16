@@ -6,9 +6,8 @@ WORKDIR /src
 COPY requirements /src/requirements/
 
 RUN pip install \
-    -r requirements/docs.txt \
+    tox \
     -r requirements/install.txt \
-    -r requirements/publish.txt \
     -r requirements/test.txt
 
 COPY . /src
