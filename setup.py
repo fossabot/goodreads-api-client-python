@@ -8,7 +8,7 @@ Goodreads API Client is a non-official Python client for
 """
 import ast
 import re
-from setuptools import setup
+from setuptools import setup, find_packages
 
 _version_re = re.compile(r'VERSION\s+=\s+(.*)')
 
@@ -55,7 +55,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Topic :: Software Development',
     ],
-    packages=['goodreads_api_client'],
+    packages=find_packages(),
     extras_require=extras_require,
     tests_require=test_require,
     install_requires=install_requires,
