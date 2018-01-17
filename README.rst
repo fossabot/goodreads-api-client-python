@@ -19,7 +19,7 @@ A lightweight wrapper around the Goodreads API
     :alt: PyPi page link -- Python versions
 
 .. image:: https://codeclimate.com/github/mdzhang/goodreads-api-client-python/badges/gpa.svg
-    :target: https://codeclimate.com/github/codeclimate/codeclimate
+    :target: https://codeclimate.com/github/mdzhang/goodreads-api-client-python
     :alt: Code Climate
 
 .. image:: https://readthedocs.org/projects/goodreads-api-client/badge/?version=latest
