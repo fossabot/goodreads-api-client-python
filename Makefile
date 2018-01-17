@@ -20,6 +20,9 @@ docs:
 install:
 	pip install .[docs,publish,test]
 
+format:
+	yapf -r -i goodreads_api_client setup.py
+
 lint-py:
 	flake8 setup.py goodreads_api_client
 
@@ -38,6 +41,15 @@ publish-test: clean
 
 test:
 	python setup.py test
+
+bump:
+	@bumpversion --commit --tag --current-version $(version) patch goodreads_api_client/__init__.py
+
+bump-minor:
+	@bumpversion --commit --tag --current-version $(version) minor goodreads_api_client/__init__.py
+
+bump-major:
+	@bumpversion --commit --tag --current-version $(version) major goodreads_api_client/__init__.py
 
 ##################################
 # Docker container management
