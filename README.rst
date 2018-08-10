@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmdzhang%2Fgoodreads-api-client-python.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmdzhang%2Fgoodreads-api-client-python?ref=badge_shield)
+
 goodreads_api_client
 ====================
 
@@ -74,3 +76,6 @@ And to test
 .. code-block:: bash
 
     $ make test
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmdzhang%2Fgoodreads-api-client-python.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmdzhang%2Fgoodreads-api-client-python?ref=badge_large)
